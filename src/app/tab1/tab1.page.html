@@ -13,5 +13,41 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div>
+    <div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <div>
+                            <ion-virtual-scroll [items]="items" approxItemHeight="320px">
+                              <ion-card *virtualItem="let item; let itemBounds = bounds;">
+                                Some text
+                              <ion-card-header>
+                                <ion-card-title>{{ item.name }}</ion-card-title>
+                              </ion-card-header>
+                              <ion-card-content>{{ item.content }}</ion-card-content>
+                              </ion-card>
+                            </ion-virtual-scroll>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </ion-content>
